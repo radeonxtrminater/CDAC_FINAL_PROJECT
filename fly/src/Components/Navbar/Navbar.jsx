@@ -6,7 +6,7 @@ import {AiOutlineGlobal} from 'react-icons/ai'
 import {CgMenuGridO} from 'react-icons/cg'
 
 //images
-import logo from '../../assets/logo.jpg'
+import logo from '../../assets/logoair.png'
 
 const Navbar= ()=>{
 
@@ -14,9 +14,27 @@ const Navbar= ()=>{
     const showNavBar= ()=>{
         setActive('navBarMenu showNavBar')
     }
+
+
+    //removing navbar in cellPhones
     const removeNavBar= ()=>{
         setActive('navBarMenu ')
     }
+
+    //adding background color in navbar for cellPhones
+
+    const [noBg, addBg]= useState('navBarTwo')
+
+    const addBgColor= ()=>{
+        if(window.scrollY>=10){
+            addBg('navBarTwo navbar_With_Bg')
+        }
+        else{
+            addBg('navBarTwo')
+        }
+        
+    }
+    window.addEventListener('scroll',addBgColor)
 
   return(
     <div className='navBar flex'>
@@ -34,7 +52,7 @@ const Navbar= ()=>{
             <span>Sign Out</span>
         </div>
      </div>
-     <div className="navBarTwo flex">
+     <div className={noBg}>
         <div className="logoDiv">
             <img src={logo} className='Logo' />
         </div>

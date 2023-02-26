@@ -14,9 +14,9 @@ const App= ()=>{
 
       <Navbar/>
       <Home/>
-      {/* <Search/>
+      <Search/>
       <Support/>
-      <Info/>
+      {/* <Info/>
       <Lounge/>
       <Travelers/>
       <Footer/> */}
