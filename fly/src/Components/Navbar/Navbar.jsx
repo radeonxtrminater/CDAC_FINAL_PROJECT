@@ -43,7 +43,7 @@ const Navbar= ()=>{
         <div>
         <SiConsul className='icon'/>    
         </div>
-        <div className='none flex'>
+        <div className='None flex'>
             <li className='flex'><BsPhoneVibrate className='icon'/>Support</li>
             <li className='flex'><AiOutlineGlobal className='icon'/>Languages</li>       
         </div>

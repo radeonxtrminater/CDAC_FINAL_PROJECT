@@ -7,7 +7,7 @@ import Navbar from './Components/Navbar/Navbar'
 import { Search } from './Components/Search/Search'
 import { Support } from './Components/Support/Support'
 import { Travelers } from './Components/Travelers/Travelers'
-
+import { Subscribe } from './Components/Subscribe/Subscribe'
 const App= ()=>{
   return(
     <div>
@@ -18,8 +18,9 @@ const App= ()=>{
       <Support/>
       <Info/>
       <Lounge/>
-      {/* <Travelers/>
-      <Footer/> */}
+      <Travelers/>
+      <Subscribe/>
+      <Footer/>
       
       </div>
   )
